@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Avocabo"
 include(":app")
+include(":theme")
