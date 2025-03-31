@@ -4,7 +4,7 @@ interface CardsRepository {
     fun getCard(): String
 }
 
-class CardRepositoryImpl(
+class CardsRepositoryImpl(
     private val dbClient: DbClient
 ) : CardsRepository {
     override fun getCard(): String {
