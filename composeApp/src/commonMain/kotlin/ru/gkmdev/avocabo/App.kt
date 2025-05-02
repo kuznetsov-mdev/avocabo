@@ -17,6 +17,7 @@ import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
 import org.koin.compose.KoinContext
 import org.koin.compose.viewmodel.koinViewModel
+import ru.gkmdev.avocabo.presentation.card.FlashCard
 
 @Composable
 @Preview
@@ -34,7 +35,7 @@ fun App() {
                         contentAlignment = Alignment.Center
                     ){
 //                        Text(stringResource(Res.string.greeting))
-                        Text(text = viewModel.getTestCard())
+                       FlashCard("Hello", "Привет")
                     }
                 }
             }
